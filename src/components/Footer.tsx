@@ -192,15 +192,8 @@ export default function Footer({ setCurrentPage, onScrollToSection, currentPage 
         <div className="pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left text-xs text-slate-500">
             <p>
-              © {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved. Developed by{' '}
-              <a 
-                href="https://main.webmakerit.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-med-blue-400 hover:underline font-semibold"
-              >
-                WMIT
-              </a>.
+              © {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved. {' '}
+              <a href="#" className="wmit-popup-trigger hover:text-white underline transition-colors" target="_blank" rel="noopener noreferrer">Developed by WMIT</a>
             </p>
             <p className="mt-1 flex items-center justify-center md:justify-start space-x-1 text-[10px] text-slate-600">
               <ShieldAlert className="w-3.5 h-3.5 text-slate-600 shrink-0" />
